@@ -7,8 +7,9 @@ const Header = (props) => {
   const click = (e) => {
     e.preventDefault()
     console.log("Hello, World!");
-    console.log(props.username)
-    console.log(props.akbar)
+    console.log(props.username);
+    console.log(props.akbar);
+    console.log(props.players)
   }
 
   // props => argment va parametr
@@ -28,6 +29,13 @@ const Header = (props) => {
         <button type="submit" className="header__search-btn"> <FiSearch/> </button>
       </form>
       <button className="header__account-loginbtn" onClick={click}>Login</button>
+      <div className="players-list">
+        {
+          props.players.map(player => 
+            <p>{player}</p>
+          )
+        }
+      </div>
     </header>
   );
 };
