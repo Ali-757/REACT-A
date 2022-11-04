@@ -4,6 +4,12 @@ import logo from "../../assets/images/logo.png";
 import { FiSearch } from "react-icons/fi";
 
 const Header = () => {
+
+  const click = (e) => {
+    e.preventDefault()
+    console.log("Hello, World!");
+  }
+
   return (
     <header>
       <div className="header__logo--wrapper">
@@ -18,7 +24,7 @@ const Header = () => {
         <input type="text" className="header__search" placeholder="Search what you want" />
         <button type="submit" className="header__search-btn"> <FiSearch/> </button>
       </form>
-      <button className="header__account-loginbtn">Login</button>
+      <button className="header__account-loginbtn" onClick={click}>Login</button>
     </header>
   );
 };
