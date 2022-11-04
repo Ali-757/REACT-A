@@ -1,0 +1,57 @@
+header{
+  height: 80px;
+  box-shadow: 0px 0px 10px gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 2rem;
+}
+
+.header__logo{
+  height: 40px;
+}
+
+.header__search--wrapper{
+  width: 100%;
+  height: 60px;
+  margin: 0px 2rem;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 3px solid orange;
+}
+
+.header__category-select{
+  border: none;
+  height: 100%;
+  border-right: 1px solid gray;
+  padding-left: 10px;
+  font-size: 18px;
+  outline: none;
+}
+
+.header__search{
+  flex: 1;
+  height: 100%;
+  text-indent: 10px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.header__search-btn{
+  padding: 0 20px;
+  background-color: orange;
+  border: none;
+  font-size: 20px;
+  height: 100%;
+}
+
+.header__account-loginbtn{
+  padding: 20px 35px;
+  border: none;
+  border-radius: 10px;
+  background-color: orange;
+  font-size: 18px;
+}
