@@ -3,12 +3,15 @@ import "./Header.css";
 import logo from "../../assets/images/logo.png";
 import { FiSearch } from "react-icons/fi";
 
-const Header = () => {
-
+const Header = (props) => {
   const click = (e) => {
     e.preventDefault()
     console.log("Hello, World!");
+    console.log(props.username)
+    console.log(props.akbar)
   }
+
+  // props => argment va parametr
 
   return (
     <header>
